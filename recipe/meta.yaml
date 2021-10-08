@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
   sha256: a50b6d61c23d17b4694279d2cf943fa0c71681f14eec05fc1a433691e7e647cd
-  patches:
-    - pyjwt.patch
 
 build:
   number: 0
