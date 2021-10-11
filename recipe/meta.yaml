@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2021.9.7" %}
+{% set version = "2021.10.3" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: da587c9fbdfd41169aeb4802d1458dac81a46f026644c29b29b5a8cbcdcb7719
+  sha256: 7260341f246287bfaff7f636d83865f2dfa1ae4507fb6d98bdc9cc7ff0a202c9
   patches:
     - pyjwt.patch
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<38]
   skip: true  # [py>38]
@@ -59,7 +59,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.md
-  summary: 'Open source home automation that puts local control and privacy first.'
+  summary: Open source home automation that puts local control and privacy first.
   description: |
     Open source home automation that puts local control and privacy first.
     Powered by a worldwide community of tinkerers and DIY enthusiasts.
