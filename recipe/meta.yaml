@@ -11,10 +11,12 @@ source:
   sha256: 25411433a3579331eba01dfc578b954f2187f643fda062ea60165ccaf0a13f2d
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<38]
   skip: true  # [py>38]
+  entry_points:
+    - hass = homeassistant.__main__:main
 
 requirements:
   host:
@@ -50,6 +52,7 @@ test:
     - homeassistant
   commands:
     - pip check
+    - hass --help
   requires:
     - pip
 
