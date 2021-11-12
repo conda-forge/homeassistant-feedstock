@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2021.11.2" %}
+{% set version = "2021.11.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: e162d76f76221ee0a0f0f672fb969be03c6f941677b47839e39faee0ea0f93ce
+  sha256: dee79e435095c2a584d606062a3aca3aa3ce82d62f67e7caf3dcb7e1da634c03
 
 build:
   number: 0
