@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2021.11.5" %}
+{% set version = "2021.12.0" %}
 
 
 package:
@@ -8,7 +8,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: d277b402004a69d6fb14031879cd0583cab9285cc3c3537ec2f504ff9c61a0cf
+  sha256: 310c4d27bf4604ebe137ea4a8739aeb038fe5a824aa0fdaa02df7f5b01ba117f
+  patches:
+    - cryptography.patch
 
 build:
   number: 0
@@ -23,18 +25,18 @@ requirements:
     - pip <20.3,>=8.0.3
     - python
   run:
-    - aiohttp ==3.7.4.post0
+    - aiohttp ==3.8.1
     - astral ==2.2
-    - async-timeout ==3.0.1
+    - async-timeout ==4.0.0
     - attrs ==21.2.0
-    - awesomeversion ==21.10.1
+    - awesomeversion ==21.11.0
     - backports.zoneinfo
     - bcrypt ==3.1.7
     - certifi >=2020.12.5
     - ciso8601 ==2.2.0
-    - cryptography ==3.4.8
-    - httpx ==0.19.0
-    - jinja2 ==3.0.2
+    - cryptography  # ==35.0.0
+    - httpx ==0.21.0
+    - jinja2 ==3.0.3
     - pip <21.3,>=8.0.3
     - pyjwt ==2.1.0
     - python
@@ -46,6 +48,8 @@ requirements:
     - voluptuous ==0.12.2
     - voluptuous-serialize ==2.4.0
     - yarl ==1.6.3
+    - ifaddr
+    - atomicwrites
 
 test:
   imports:
