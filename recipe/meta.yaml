@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2021.12.3" %}
+{% set version = "2021.12.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: 0aa1302007d91841f458c00803b06319eff1be292d61ef90eb7fd2a140dff0f6
+  sha256: ce6f1b8c5b28d73d430ceb8aa3c67f4d06cc2d0d9df4328b5d36688d27a8d1f1
   patches:
     - cryptography.patch
 
@@ -46,7 +46,7 @@ requirements:
     - requests ==2.26.0
     - ruamel.yaml ==0.17.16
     - voluptuous ==0.12.2
-    - voluptuous-serialize ==2.4.0
+    - voluptuous-serialize ==2.5.0
     - yarl ==1.6.3
     - ifaddr
     - atomicwrites
