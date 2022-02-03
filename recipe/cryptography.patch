@@ -1,22 +1,30 @@
-From 06c5593fd110d235e10643d2c197d948d2ec3923 Mon Sep 17 00:00:00 2001
+From 0176823442afde0212ec0e0c74799805897aa9b2 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Sat, 11 Dec 2021 16:26:07 -0700
-Subject: [PATCH] Update setup.py
+Date: Wed, 2 Feb 2022 18:41:49 -0700
+Subject: [PATCH] Update setup.cfg
 
 ---
- setup.py | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ setup.cfg | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
-diff --git a/setup.py b/setup.py
-index ee163bc79f46a..26b85a41f76b7 100755
---- a/setup.py
-+++ b/setup.py
-@@ -47,7 +47,7 @@
-     "jinja2==3.0.3",
-     "PyJWT==2.1.0",
-     # PyJWT has loose dependency. We want the latest one.
--    "cryptography==35.0.0",
-+    "cryptography==3.4.8",
-     "pip>=8.0.3,<20.3",
-     "python-slugify==4.0.1",
-     "pyyaml==6.0",
+diff --git a/setup.cfg b/setup.cfg
+index c428acf6..66c357a8 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -37,14 +37,14 @@ install_requires =
+ 	attrs==21.2.0
+ 	atomicwrites==1.4.0
+ 	awesomeversion==22.1.0
+-	bcrypt==3.1.7
++	bcrypt==3.2.0
+ 	certifi>=2021.5.30
+ 	ciso8601==2.2.0
+ 	httpx==0.21.3
+ 	ifaddr==0.1.7
+ 	jinja2==3.0.3
+ 	PyJWT==2.1.0
+-	cryptography==35.0.0
++	cryptography==3.4.8
+ 	pip>=8.0.3,<20.3
+ 	python-slugify==4.0.1
+ 	pyyaml==6.0
