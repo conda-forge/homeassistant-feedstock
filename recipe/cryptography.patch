@@ -1,6 +1,6 @@
-From f782f30e0764373ef7c6ba0e69f3420892a3424a Mon Sep 17 00:00:00 2001
+From 9814f946bf2b2efd8a55df096fc5ad3cd69050ff Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 2 Feb 2022 17:16:52 -0700
+Date: Wed, 2 Feb 2022 18:16:52 -0700
 Subject: [PATCH] Update setup.cfg
 
 ---
@@ -8,15 +8,15 @@ Subject: [PATCH] Update setup.cfg
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/setup.cfg b/setup.cfg
-index 970a736b68f1e..1de41f104c4d3 100644
+index c428acf6..b01c0b9f 100644
 --- a/setup.cfg
 +++ b/setup.cfg
-@@ -47,7 +47,7 @@ install_requires =
-     jinja2==3.0.3
-     PyJWT==2.1.0
-     # PyJWT has loose dependency. We want the latest one.
--    cryptography==35.0.0
-+    cryptography==3.4.8
-     pip>=8.0.3,<20.3
-     python-slugify==4.0.1
-     pyyaml==6.0
+@@ -44,7 +44,7 @@ install_requires =
+ 	ifaddr==0.1.7
+ 	jinja2==3.0.3
+ 	PyJWT==2.1.0
+-	cryptography==35.0.0
++	cryptography==3.4.8
+ 	pip>=8.0.3,<20.3
+ 	python-slugify==4.0.1
+ 	pyyaml==6.0
