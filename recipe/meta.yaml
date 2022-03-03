@@ -21,14 +21,14 @@ build:
 
 requirements:
   host:
-    - pip <20.3,>=8.0.3
+    - pip
     - python
   run:
     - aiohttp ==3.8.1
     - astral ==2.2
     - async-timeout ==4.0.2
     - attrs ==21.2.0
-    - awesomeversion ==22.1.0
+    - awesomeversion ==22.2.0
     - backports.zoneinfo
     - bcrypt ==3.2.0
     - certifi >=2020.12.5
@@ -39,7 +39,7 @@ requirements:
     - pip <21.3,>=8.0.3
     - pyjwt ==2.1.0
     - python
-    - pip <20.3,>=8.0.3
+    - pip <22.1,>=21.0
     - python-slugify ==4.0.1
     - pyyaml ==6.0
     - requests ==2.27.1
