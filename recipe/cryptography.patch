@@ -1,6 +1,6 @@
-From 0176823442afde0212ec0e0c74799805897aa9b2 Mon Sep 17 00:00:00 2001
+From 5ee650bd87eaad7e561c62e6f226395773e289ac Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 2 Feb 2022 18:41:49 -0700
+Date: Wed, 2 Mar 2022 18:03:26 -0700
 Subject: [PATCH] Update setup.cfg
 
 ---
@@ -8,13 +8,13 @@ Subject: [PATCH] Update setup.cfg
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/setup.cfg b/setup.cfg
-index c428acf6..66c357a8 100644
+index 24617a63..0aeb9f9d 100644
 --- a/setup.cfg
 +++ b/setup.cfg
 @@ -37,14 +37,14 @@ install_requires =
  	attrs==21.2.0
  	atomicwrites==1.4.0
- 	awesomeversion==22.1.0
+ 	awesomeversion==22.2.0
 -	bcrypt==3.1.7
 +	bcrypt==3.2.0
  	certifi>=2021.5.30
@@ -25,6 +25,6 @@ index c428acf6..66c357a8 100644
  	PyJWT==2.1.0
 -	cryptography==35.0.0
 +	cryptography==3.4.8
- 	pip>=8.0.3,<20.3
+ 	pip>=21.0,<22.1
  	python-slugify==4.0.1
  	pyyaml==6.0
