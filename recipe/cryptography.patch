@@ -1,6 +1,6 @@
-From 5ee650bd87eaad7e561c62e6f226395773e289ac Mon Sep 17 00:00:00 2001
+From 6bc4f6353847a962d3623ef132cf56ef2bfb18c1 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Wed, 2 Mar 2022 18:03:26 -0700
+Date: Fri, 8 Apr 2022 09:35:29 -0600
 Subject: [PATCH] Update setup.cfg
 
 ---
@@ -8,7 +8,7 @@ Subject: [PATCH] Update setup.cfg
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/setup.cfg b/setup.cfg
-index 24617a63..0aeb9f9d 100644
+index 704b9052..494ade4c 100644
 --- a/setup.cfg
 +++ b/setup.cfg
 @@ -37,14 +37,14 @@ install_requires =
@@ -19,12 +19,12 @@ index 24617a63..0aeb9f9d 100644
 +	bcrypt==3.2.0
  	certifi>=2021.5.30
  	ciso8601==2.2.0
- 	httpx==0.21.3
+ 	httpx==0.22.0
  	ifaddr==0.1.7
- 	jinja2==3.0.3
- 	PyJWT==2.1.0
+ 	jinja2==3.1.0
+ 	PyJWT==2.3.0
 -	cryptography==35.0.0
-+	cryptography==3.4.8
++	cryptography==36.0.2
  	pip>=21.0,<22.1
  	python-slugify==4.0.1
  	pyyaml==6.0
