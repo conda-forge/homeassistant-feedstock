@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2022.4.7" %}
+{% set version = "2022.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: 176a91a467335c2fcb42c5fc2253d9d057168023bd4f0664766de02c43621b9f
+  sha256: 09abdabbbd83a44964ae07ad9e62dc13cfd00254189dd6d3d11590cfaf9d60e4
   patches:
     - cryptography.patch
 
@@ -35,7 +35,7 @@ requirements:
     - ciso8601 ==2.2.0
     - cryptography  # ==35.0.0
     - httpx ==0.22.0
-    - jinja2 ==3.1.0
+    - jinja2 ==3.1.1
     - pip <21.3,>=8.0.3
     - pyjwt ==2.3.0
     - python
@@ -44,7 +44,7 @@ requirements:
     - pyyaml ==6.0
     - requests ==2.27.1
     - ruamel.yaml ==0.17.16
-    - voluptuous ==0.12.2
+    - voluptuous ==0.13.1
     - voluptuous-serialize ==2.5.0
     - yarl ==1.7.2
     - ifaddr
