@@ -23,6 +23,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools ==60.5
   run:
     - aiohttp ==3.8.1
     - astral ==2.2
