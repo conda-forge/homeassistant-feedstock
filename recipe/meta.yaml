@@ -1,5 +1,5 @@
 {% set name = "homeassistant" %}
-{% set version = "2022.5.5" %}
+{% set version = "2022.6.1" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: 1eea334754ca6bf66423cceafbefb5703839ad0bda5196b386803c07fbcf055b
+  sha256: 9c8c616481eb09cfe5fea8db2b6d95ce28507df7f98e3301b6b118e764ea4556
   patches:
     - cryptography.patch
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -29,27 +29,25 @@ requirements:
     - astral ==2.2
     - async-timeout ==4.0.2
     - attrs ==21.2.0
-    - awesomeversion ==22.2.0
+    - atomicwrites ==1.4.0
+    - awesomeversion ==22.5.2
     - backports.zoneinfo
     - bcrypt ==3.2.0
-    - certifi >=2020.12.5
+    - certifi >=2021.5.30
     - ciso8601 ==2.2.0
-    - cryptography ==36.0.2
-    - httpx ==0.22.0
-    - jinja2 ==3.1.1
-    - pip <21.3,>=8.0.3
-    - pyjwt ==2.3.0
+    - cryptography  # ==35.0.0
+    - httpx ==0.23.0
+    - ifaddr ==0.1.7
+    - jinja2 ==3.1.2
+    - pyjwt ==2.4.0
     - python >=3.9
-    - pip <22.1,>=21.0
+    - pip <22.2,>=21.0
     - python-slugify ==4.0.1
     - pyyaml ==6.0
     - requests ==2.27.1
-    - ruamel.yaml ==0.17.16
     - voluptuous ==0.13.1
     - voluptuous-serialize ==2.5.0
     - yarl ==1.7.2
-    - ifaddr
-    - atomicwrites
 
 test:
   imports:
