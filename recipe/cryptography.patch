@@ -11,10 +11,10 @@ diff --git a/setup.cfg b/setup.cfg
 index 704b9052..494ade4c 100644
 --- a/setup.cfg
 +++ b/setup.cfg
-@@ -37,7 +37,7 @@ install_requires =
+@@ -11,7 +11,7 @@ install_requires =
  	attrs==21.2.0
  	atomicwrites==1.4.0
- 	awesomeversion==22.2.0
+ 	awesomeversion==22.5.2
 -	bcrypt==3.1.7
 +	bcrypt==3.2.0
  	certifi>=2021.5.30
