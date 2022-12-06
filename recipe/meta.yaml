@@ -29,16 +29,16 @@ requirements:
     - astral ==2.2
     - async-timeout ==4.0.2
     - attrs ==21.2.0
-    - awesomeversion ==22.2.0
+    - awesomeversion ==22.5.2
     - backports.zoneinfo
     - bcrypt ==3.2.0
     - certifi >=2020.12.5
     - ciso8601 ==2.2.0
     - cryptography ==36.0.2
-    - httpx ==0.22.0
-    - jinja2 ==3.1.1
+    - httpx ==0.23.0
+    - jinja2 ==3.1.2
     - pip <21.3,>=8.0.3
-    - pyjwt ==2.3.0
+    - pyjwt ==2.4.0
     - python >=3.9
     - pip <22.1,>=21.0
     - python-slugify ==4.0.1
@@ -48,8 +48,8 @@ requirements:
     - voluptuous ==0.13.1
     - voluptuous-serialize ==2.5.0
     - yarl ==1.7.2
-    - ifaddr
-    - atomicwrites
+    - ifaddr ==0.1.7
+    - atomicwrites ==1.4.0
 
 test:
   imports:
