@@ -1,22 +1,25 @@
-From 6bc4f6353847a962d3623ef132cf56ef2bfb18c1 Mon Sep 17 00:00:00 2001
-From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Fri, 8 Apr 2022 09:35:29 -0600
-Subject: [PATCH] Update setup.cfg
+From d68b95109a279b520a1052abf50847c816f0864f Mon Sep 17 00:00:00 2001
+From: Sylvain Corlay <sylvain.corlay@gmail.com>
+Date: Tue, 6 Dec 2022 23:31:36 +0100
+Subject: [PATCH] Require bcrypt 3.2.0
 
 ---
- setup.cfg | 4 ++--
- 1 file changed, 2 insertions(+), 2 deletions(-)
+ pyproject.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/setup.cfg b/setup.cfg
-index 704b9052..494ade4c 100644
---- a/setup.cfg
-+++ b/setup.cfg
-@@ -11,7 +11,7 @@ install_requires =
- 	attrs==21.2.0
- 	atomicwrites==1.4.0
- 	awesomeversion==22.5.2
--	bcrypt==3.1.7
-+	bcrypt==3.2.0
- 	certifi>=2021.5.30
- 	ciso8601==2.2.0
-  # When bumping httpx, please check the version pins of
+diff --git a/pyproject.toml b/pyproject.toml
+index 37e6f66f68..1d1f80bc42 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -30,7 +30,7 @@ dependencies    = [
+     "attrs==21.2.0",
+     "atomicwrites-homeassistant==1.4.1",
+     "awesomeversion==22.9.0",
+-    "bcrypt==3.1.7",
++    "bcrypt==3.2.0",
+     "certifi>=2021.5.30",
+     "ciso8601==2.2.0",
+     # When bumping httpx, please check the version pins of
+-- 
+2.30.1 (Apple Git-130)
+
