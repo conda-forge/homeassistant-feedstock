@@ -1,6 +1,6 @@
 {% set name = "homeassistant" %}
 {% set version = "2025.12.3" %}
-
+{% set python_min = "3.13" %}
 
 package:
   name: {{ name|lower }}
