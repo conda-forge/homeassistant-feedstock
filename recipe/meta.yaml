@@ -1,6 +1,6 @@
 {% set name = "homeassistant" %}
-{% set version = "2022.6.3" %}
-
+{% set version = "2025.12.3" %}
+{% set python_min = "3.13" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
-  sha256: 494e1570405483158bd27d43efecbac032aae065cd2fc92299b02dfa51ab9fd2
-  patches:
-    - cryptography.patch
+  sha256: 7bdf55492da232c6521f8dece535d9e0218473b8be6ed9e87247f02d2b2d944e
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
