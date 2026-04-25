@@ -1,28 +1,31 @@
-{% set name = "homeassistant" %}
-{% set version = "2022.6.3" %}
+schema_version: 1
 
+context:
+  name: homeassistant
+  version: 2022.6.3
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/homeassistant-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/homeassistant-${{ version }}.tar.gz
   sha256: 494e1570405483158bd27d43efecbac032aae065cd2fc92299b02dfa51ab9fd2
   patches:
     - cryptography.patch
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 2
   noarch: python
-  entry_points:
-    - hass = homeassistant.__main__:main
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - hass = homeassistant.__main__:main
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools
   run:
     - aiohttp ==3.8.1
@@ -38,7 +41,7 @@ requirements:
     - httpx ==0.23.0
     - jinja2 ==3.1.2
     - pyjwt ==2.4.0
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - pip <22.2,>=21.0
     - python-slugify ==4.0.1
     - pyyaml ==6.0
@@ -49,28 +52,30 @@ requirements:
     - ifaddr ==0.1.7
     - atomicwrites ==1.4.0
 
-test:
-  imports:
-    - homeassistant
-  commands:
-    - pip check
-    - hass --help
-  requires:
-    - pip
-    - python {{ python_min }}
+tests:
+  - python:
+      imports:
+        - homeassistant
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+      - hass --help
 
 about:
-  home: https://www.home-assistant.io/
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE.md
   summary: Open source home automation that puts local control and privacy first.
   description: |
     Open source home automation that puts local control and privacy first.
     Powered by a worldwide community of tinkerers and DIY enthusiasts.
     Perfect to run on a Raspberry Pi or a local server.
-  doc_url: https://simplejson.readthedocs.io/
-  dev_url: https://github.com/home-assistant/core
+  homepage: https://www.home-assistant.io/
+  repository: https://github.com/home-assistant/core
+  documentation: https://simplejson.readthedocs.io/
 
 extra:
   recipe-maintainers:
